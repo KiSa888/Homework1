@@ -1,0 +1,211 @@
+$dark-color: #202027;
+$toxic-green: #BCEC30;
+$light-green: #E1FF8F;
+$white: #FFFF;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+     overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.regular-text {
+    font-size: 24px;
+    font-weight: 400; 
+}
+
+.semibold-text {
+    font-size: 24px;
+    font-weight: 600; 
+}
+
+.mini-text {
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.button {
+    color: $white;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 1px solid $dark-color;
+    border-radius: 60px;
+    background: $dark-color;
+    padding: 16px 65px;
+    cursor: pointer;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.button:hover {
+    color: #000;
+    background: $white;
+}
+
+
+
+.top {
+    background-color: $light-green;
+
+    &__big-star {
+        position: absolute;
+        margin-left: 743px;
+        top: -335px;
+    }
+
+    &__star-1 {
+        position: absolute;
+        top: 69px;
+        left: 156px;
+    }
+
+    &__star-2 {
+        position: absolute;
+        top: 94px;
+        left: 63px;
+    }
+
+    &__star-3 {
+        position: absolute;
+        top: 538px;
+        right: 455px;
+    }
+
+    &__star-4 {
+        position: absolute;
+        top: 568px;
+        right: 344px;
+    }
+
+    &__title {
+        line-height: 78px;
+        letter-spacing: 0px;
+        padding-top: 196px;
+    }
+
+    &__text {
+        line-height: 32px;
+        margin-top: 24px;
+    }
+
+    &__button {
+        display: inline-block;
+        margin-top: 48px;
+        margin-bottom: 246px;
+    }
+}
+
+.games {
+    background-color: $dark-color;
+    position: relative;
+    z-index: 0;
+
+    &__big-star {
+        position: absolute;
+        top: 77px;
+        left: 1000px;
+        z-index: 1;
+    }
+
+    &__star-1 {
+        position: absolute;
+        top: 770px;
+        left: 25px;
+    }
+
+    &__star-2 {
+        position: absolute;
+        top: 822px;
+        left: 40px;
+    }
+
+    &__title {
+        color: $white;
+        padding-top: 94px;
+    }
+
+    &__text {
+        color: $white;
+        margin-top: 24px;
+    }
+
+    &_content-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 33px;
+        padding-top: 72px;
+        grid-auto-flow: row;
+        padding-bottom: 96px;
+    }
+
+    &__double-card {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    &__card {
+        background-color: $white;
+        border-radius: 30px;
+        z-index: 2;
+    }
+
+    &__card-picture {
+        border-radius: 30px;
+    }
+
+    &__card-number {
+        border-radius: 52.58px;
+        background: rgba(247, 247, 247, 1);
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        width: 108px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+
+    &__card-name {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        margin-top: 16px;
+        margin-left: 32px;
+        margin-bottom: 36px;
+    }
+}
