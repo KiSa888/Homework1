@@ -46,6 +46,7 @@ a {
 .regular-text {
     font-size: 24px;
     font-weight: 400; 
+    line-height: 32px;
 }
 
 .semibold-text {
@@ -170,7 +171,6 @@ a {
         gap: 33px;
         padding-top: 72px;
         grid-auto-flow: row;
-        padding-bottom: 96px;
     }
 
     &__double-card {
@@ -207,5 +207,105 @@ a {
         margin-top: 16px;
         margin-left: 32px;
         margin-bottom: 36px;
+    }
+}
+
+.mini-games {
+    background-color: $dark-color;
+    position: relative;
+    padding-bottom: 144px;
+
+     &__star-1 {
+        position: absolute;
+        right: 123px;
+        top: 143px;
+    }
+
+    &__star-2 {
+        position: absolute;
+        right: 44px;
+        top: 176px;
+    }
+
+    &__title {
+        color: $white;
+        padding-top: 96px;
+        padding-bottom: 40px;
+    }
+
+    &__card {
+        background-color: $white;
+        border-radius: 30px;
+        margin-top: 32px;
+    }
+
+    &__card-right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card-left {
+        display: flex;
+    }
+
+    &_card-wrapper {
+        margin-top: 48px;
+        margin-left: 48px;
+    }
+
+    &__card-name {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+    }
+
+    &__card-text {
+        margin-top: 24px;
+    }
+
+    &__button {
+        margin-top: 36px;
+        color: $white;
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 600;
+        box-sizing: border-box;
+        border: 1px solid $dark-color;
+        border-radius: 60px;
+        background: $dark-color;
+        padding: 16px 75px;
+        cursor: pointer;
+        transition: background 0.5s ease, color 0.5s ease;
+    }
+
+    &__button:hover {
+        color: #000;
+        background: $white;
+    }
+
+    &__star-3 {
+        position: absolute;
+        right: 52px;
+        bottom: 65px;
+    }
+
+    &__star-4 {
+        position: absolute;
+        right: 150px;
+        bottom: 45px;
+    }
+}
+
+.footer {
+    background-color: $toxic-green;
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 }
